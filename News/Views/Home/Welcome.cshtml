@@ -1,0 +1,24 @@
+﻿
+@{
+    //Layout = null;
+    var a = 10.5;
+    var b = 20;
+
+    int v = 100;
+}
+
+
+
+<div>
+    <h1>welcome </h1>
+    <div>结果：@ViewBag.sum </div>
+    <div>@(a + b)</div>
+    <div> @( "TIME:" + DateTime.Now.ToString() )</div>
+</div>
+
+<ul  class="list-unstyled">
+    @for (int i = 0; i < 10; i++)
+    {
+        <li>元素:@(i + 1)</li>
+    }
+</ul>
