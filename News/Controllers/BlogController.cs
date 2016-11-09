@@ -32,6 +32,14 @@ namespace News.Controllers
 
         public ActionResult AddArticle()
         {
+            if (Request.Cookies["isauth"] != null && Request.Cookies["isauth"].Value == "true")
+                           {
+                              return View();
+                           }
+                        else
+             {
+                              return RedirectToAction("login", "cookiedemo");
+                        }
             return View();
         }
 
