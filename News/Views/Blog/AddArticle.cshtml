@@ -6,7 +6,7 @@
 <h2>添加博客文章</h2>
 
 
-<form action="/Blog/ArticleSave" method="post">
+@*<form action="/Blog/ArticleSave" method="post">*@
 @using (Html.BeginForm("ArticleSave", "Blog"))
 {
     @Html.ValidationSummary()
@@ -37,6 +37,6 @@
         </tr>
 
     </table>
-</form>
+@*</form>*@
 }
 

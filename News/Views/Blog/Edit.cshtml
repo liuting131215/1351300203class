@@ -16,6 +16,7 @@
             <td><input type="text" name="Subject" value="@Model.Subject" />  </td>
             <td>
                                @Html.TextBox("Subject")
+                <div>@Html.ValidationMessageFor(o => o.Subject)</div>
             </td>
         </tr>
         <tr>
