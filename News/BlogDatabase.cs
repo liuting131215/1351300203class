@@ -1,6 +1,7 @@
 ﻿namespace News
 {
     using System;
+    using System.ComponentModel.DataAnnotations;
     using System.Data.Entity;
     using System.Linq;
 
@@ -62,12 +63,14 @@
         /// <summary>
         /// 标题
         /// </summary>
+          [Required]
+          [StringLength(maximumLength: 20, MinimumLength = 5)]
         public string Subject { get; set; }
 
         /// <summary>
         /// 文章内容
-        /// </summary>
-
+        /// </summary>6t;'pov
+        [Required]
         public string Body { get; set; }
 
         /// <summary>
